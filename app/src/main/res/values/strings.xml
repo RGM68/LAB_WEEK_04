@@ -51,6 +51,7 @@
     <string name="list_frag_label">List of Coffee</string>
     <string name="detail_frag_label">Coffee Details</string>
     <string name="fav_frag_label">Favorite Coffees</string>
+    <string name="cafe_frag_label">Cafes</string>
 
 
 </resources>
