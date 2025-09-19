@@ -44,7 +44,7 @@ class CafeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val viewPager = view.findViewById<ViewPager2>(R.id.view_pager)
         val tabLayout = view.findViewById<TabLayout>(R.id.tab_layout)
-        val adapter = CafeAdapter(childFragmentManager, lifecycle)
+        val adapter = CafeAdapter(childFragmentManager, lifecycle, resources)
         viewPager.adapter = adapter
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             tab.text = resources.getString(TABS_FIXED[position])
@@ -52,15 +52,6 @@ class CafeFragment : Fragment() {
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment CafeFragment.
-         */
-        // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             CafeFragment().apply {

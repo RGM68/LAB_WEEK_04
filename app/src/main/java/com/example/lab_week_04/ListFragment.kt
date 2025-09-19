@@ -87,8 +87,6 @@ class ListFragment : Fragment(){
             view.findViewById(R.id.mocha)
         )
 
-
-
 //        coffeeList.forEach { it.setOnClickListener(this) }
 
         coffeeList.forEach { coffee ->
